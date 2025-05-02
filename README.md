@@ -18,6 +18,7 @@ A production-ready Node.js backend template using **Express.js**, **TypeScript**
 - [Useful Scripts](#useful-scripts)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
+- [How to Sign Off Your Commits](#how-to-sign-off-your-commits)
 - [Author](#author)
 - [License](#license)
 - [Notes](#notes)
@@ -168,6 +169,15 @@ This template is built using the following core technologies:
 * rate-limiter-flexible: A rate limiter for Express.js based on different algorithms (e.g., token bucket, leaky bucket).
 * socket.io: Enables real-time, bidirectional, and event-based communication.
 * jest: A delightful JavaScript Testing Framework with a focus on simplicity.
+
+## How to Sign Off Your Commits
+To sign off your commits and comply with the DCO:
+
+```bash
+git commit -s -m "your commit message"
+```
+This adds the following line at the end of your commit message:
+Signed-off-by: Your Name [your.email@example.com]()
 
 ## Author
 This template was created by [Didierson Amuri/Anywr Africa](https://github.com/didiamuri).

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bba820f-ebb2-4fbe-8141-dceabca243e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DCO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/anywr-pos-backend.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
@@ -90,7 +91,7 @@
       <workItem from="1746203338491" duration="36000" />
       <workItem from="1746203382867" duration="16000" />
       <workItem from="1746203406445" duration="56000" />
-      <workItem from="1746203488178" duration="6241000" />
+      <workItem from="1746203488178" duration="7170000" />
     </task>
     <servers />
   </component>
