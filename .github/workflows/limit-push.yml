@@ -1,0 +1,31 @@
+name: Limit Pushes
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  check-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check the code
+        uses: actions/checkout@v2
+
+      - name: Get pushed branches and tags
+        run: |
+          PUSHED_BRANCHES=$(git diff --name-only HEAD^..HEAD | grep -E 'refs/heads/' | wc -l)
+          PUSHED_TAGS=$(git diff --name-only HEAD^..HEAD | grep -E 'refs/tags/' | wc -l)
+          echo "Pushed branches: $PUSHED_BRANCHES"
+          echo "Pushed tags: $PUSHED_TAGS"
+
+          if [ "$PUSHED_BRANCHES" -gt 3 ]; then
+            echo "Error: You cannot push more than 3 branches at once."
+            exit 1
+          fi
+
+          if [ "$PUSHED_TAGS" -gt 2 ]; then
+            echo "Error: You cannot push more than 2 tags at once."
+            exit 1
+          fi
