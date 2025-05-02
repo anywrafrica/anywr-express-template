@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "esnext"],
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": false,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@configs/*": ["src/configs/*"],
+      "@dto/*": ["src/dto/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@modules/*": ["src/modules/*"],
+      "@schemas": ["src/schemas/index.ts"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@tests/*": ["__tests__/*"]
+    }
+  }
+}
